@@ -1,0 +1,61 @@
+﻿.container h1 {
+    font-weight: 400;
+    color: var(--main-color);
+    cursor: default;
+}
+
+.lists-menu li {
+    height: 100%;
+}
+
+.list-item {
+    position: relative;
+    display: block;
+    color: white;
+    padding: 8px;
+}
+
+.list-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background: #d9ecc7;
+}
+
+.list-item:hover {
+    font-weight: 600;
+}
+
+.list-item:hover:after {
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.login .btnLogin {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    background: white;
+    transition: transform 0.2s ease-in-out;
+    width: fit-content;
+}
+
+#username {
+    margin-right: 10px;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+}
+
+.btnLogin:hover  {
+    transform: scale(1.1);
+    background: rgb(215, 215, 215);
+}

@@ -1,0 +1,40 @@
+﻿.container {
+    display: flex;
+    margin: 40px auto;
+    border: 1px solid var(--main-color);
+    border-radius: 40px;
+}
+
+.login, .signup {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+}
+
+.login-group {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    width: 200px;
+    height: 40px;
+}
+
+.btn-group {
+    background: var(--main-color);
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn-group:hover {
+    background: #d9ecc7;
+    color: black;
+}
+
+.vertical-bar {
+    width: 80%;
+    height: 1px;
+    background: var(--main-color);
+    margin: 10px 0;
+}
