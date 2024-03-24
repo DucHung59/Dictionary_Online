@@ -24,7 +24,7 @@
             </ul>
 
             <form class="login">
-                <button class="btnLogin" name="btnLogin" ID="btnLogin" runat="server"><a href="login.aspx">Login</a></button>
+                <button class="btnLogin" ID="btnLogin" runat="server"><a href="login.aspx">Login</a></button>
                 <div class="logout">
                     <label name="username" id="username" runat="server"></label>
                     <input type="button" value="Logout" class="btnLogin" name="btnLogout" Visible="false" ID="btnLogout" runat="server"/>

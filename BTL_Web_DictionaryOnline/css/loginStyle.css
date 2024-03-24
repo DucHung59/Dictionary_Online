@@ -38,3 +38,10 @@
     background: var(--main-color);
     margin: 10px 0;
 }
+
+.container span:hover {
+    cursor: pointer;
+    color: var(--main-color);
+    text-decoration: 1px solid var(--main-color);
+}
+
