@@ -11,15 +11,6 @@ namespace BTL_Web_DictionaryOnline
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["userID"] != null)
-            {
-                btnLogin.Visible = false;
-                username.InnerText = Session["username"].ToString();
-                btnLogout.Visible = true;
-            } else
-            {
-                btnLogout.Visible = false;
-            }
         }
     }
 }

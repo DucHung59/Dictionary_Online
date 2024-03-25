@@ -85,7 +85,7 @@ input-group:focus-visible {
 
 .message-signup {
     width: 50%;
-    transform: translateX();
+    transform: translateX(0);
 }
 
 .message-login::before {

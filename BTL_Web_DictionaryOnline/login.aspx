@@ -1,15 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="BTL_Web_DictionaryOnline.login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="BTL_Web_DictionaryOnline.login" MasterPageFile="~/MainLayout.Master" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Dictionary Online - Login</title>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/13755/13755309.png" />
-    <link href="css/root.css" rel="stylesheet" />
+<asp:Content runat="server" ContentPlaceHolderID="head">
     <link href="css/loginStyle.css" rel="stylesheet" />
-</head>
-<body>
+</asp:Content>
+
+
+<asp:Content ContentPlaceHolderID="Content" runat="server">
     <form id="form1" runat="server" method="post" action="index.aspx" style="display: flex">
         <div class="container">
             <div class="Message message-login">
@@ -17,8 +13,8 @@
             </div>
             <div class="login">
                 <h4>Log in</h4>
-                <input type="text" id="username" name="username" class="login-group input-group" runat="server" placeholder="Username..."/>
-                <input type="password" id="password" name="password" class="login-group input-group" runat="server" placeholder="Password..."/>
+                <input type="text" id="username" name="username" class="login-group input-group" runat="server" placeholder="Username..." />
+                <input type="password" id="password" name="password" class="login-group input-group" runat="server" placeholder="Password..." />
                 <label id="check" name="check" runat="server"></label>
                 <input type="submit" value="Login" class="login-group btn-group" />
                 <div class="vertical-bar"></div>
@@ -26,9 +22,9 @@
             </div>
             <div class="signup">
                 <h4>Sign up</h4>
-                <input type="text" id="name" name="name" class="login-group input-group" runat="server" placeholder="Your name..."/>
-                <input type="text" id="user" name="user" class="login-group input-group" runat="server" placeholder="Username..."/>
-                <input type="password" id="pass" name="pass" class="login-group input-group" runat="server" placeholder="Password..."/>
+                <input type="text" id="name" name="name" class="login-group input-group" runat="server" placeholder="Your name..." />
+                <input type="text" id="user" name="user" class="login-group input-group" runat="server" placeholder="Username..." />
+                <input type="password" id="pass" name="pass" class="login-group input-group" runat="server" placeholder="Password..." />
                 <label id="Label1" name="check" runat="server"></label>
                 <input type="submit" class="login-group btn-group" value="Sign up" />
                 <div class="vertical-bar"></div>
@@ -38,5 +34,5 @@
     </form>
 
     <script src="js/loginForm.js"></script>
-</body>
-</html>
+</asp:Content>
+

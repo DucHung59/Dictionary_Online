@@ -82,7 +82,7 @@
   <ItemGroup>
     <Content Include="css\headerStyle.css" />
     <Content Include="css\loginStyle.css" />
-    <Content Include="css\mainStyle.css" />
+    <Content Include="css\indexStyle.css" />
     <Content Include="css\root.css" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
