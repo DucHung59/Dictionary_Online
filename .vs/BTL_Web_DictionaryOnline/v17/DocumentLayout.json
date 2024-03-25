@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\btl_web_dictionaryonline\\css\\loginstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|solutionrelative:btl_web_dictionaryonline\\css\\loginstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|c:\\users\\admin\\workspace\\ltw project\\btl_web_dictionaryonline\\btl_web_dictionaryonline\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\btl_web_dictionaryonline\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|solutionrelative:btl_web_dictionaryonline\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\btl_web_dictionaryonline\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|solutionrelative:btl_web_dictionaryonline\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|c:\\users\\admin\\workspace\\ltw project\\btl_web_dictionaryonline\\btl_web_dictionaryonline\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|solutionrelative:btl_web_dictionaryonline\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\btl_web_dictionaryonline\\mainlayout.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|solutionrelative:btl_web_dictionaryonline\\mainlayout.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|c:\\users\\admin\\workspace\\ltw project\\btl_web_dictionaryonline\\btl_web_dictionaryonline\\js\\loginform.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|solutionrelative:btl_web_dictionaryonline\\js\\loginform.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\btl_web_dictionaryonline\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|solutionrelative:btl_web_dictionaryonline\\mainlayout.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\btl_web_dictionaryonline\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|solutionrelative:btl_web_dictionaryonline\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\btl_web_dictionaryonline\\css\\headerstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|solutionrelative:btl_web_dictionaryonline\\css\\headerstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|c:\\users\\admin\\workspace\\ltw project\\btl_web_dictionaryonline\\btl_web_dictionaryonline\\css\\loginstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2D4FE960-A257-41A8-BD7F-A8CF05784313}|BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline.csproj|solutionrelative:btl_web_dictionaryonline\\css\\loginstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,6 +29,19 @@
           "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\login.aspx.cs",
+              "RelativeDocumentMoniker": "BTL_Web_DictionaryOnline\\login.aspx.cs",
+              "ToolTip": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\login.aspx.cs",
+              "RelativeToolTip": "BTL_Web_DictionaryOnline\\login.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T08:12:29.104Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
@@ -50,56 +51,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainLayout.Master.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\MainLayout.Master.cs",
-              "RelativeDocumentMoniker": "BTL_Web_DictionaryOnline\\MainLayout.Master.cs",
-              "ToolTip": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\MainLayout.Master.cs",
-              "RelativeToolTip": "BTL_Web_DictionaryOnline\\MainLayout.Master.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T13:38:18.648Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "headerStyle.css",
-              "DocumentMoniker": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\css\\headerStyle.css",
-              "RelativeDocumentMoniker": "BTL_Web_DictionaryOnline\\css\\headerStyle.css",
-              "ToolTip": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\css\\headerStyle.css",
-              "RelativeToolTip": "BTL_Web_DictionaryOnline\\css\\headerStyle.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-03-22T12:48:20.687Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "index.aspx",
-              "DocumentMoniker": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\index.aspx",
-              "RelativeDocumentMoniker": "BTL_Web_DictionaryOnline\\index.aspx",
-              "ToolTip": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\index.aspx",
-              "RelativeToolTip": "BTL_Web_DictionaryOnline\\index.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-17T06:16:37.782Z"
+              "Title": "loginForm.js",
+              "DocumentMoniker": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\js\\loginForm.js",
+              "RelativeDocumentMoniker": "BTL_Web_DictionaryOnline\\js\\loginForm.js",
+              "ToolTip": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\js\\loginForm.js",
+              "RelativeToolTip": "BTL_Web_DictionaryOnline\\js\\loginForm.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-25T08:09:11.351Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "loginStyle.css",
               "DocumentMoniker": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\css\\loginStyle.css",
               "RelativeDocumentMoniker": "BTL_Web_DictionaryOnline\\css\\loginStyle.css",
               "ToolTip": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\css\\loginStyle.css",
               "RelativeToolTip": "BTL_Web_DictionaryOnline\\css\\loginStyle.css",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAIwC4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-03-22T12:27:41.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "login.aspx",
               "DocumentMoniker": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\login.aspx",
               "RelativeDocumentMoniker": "BTL_Web_DictionaryOnline\\login.aspx",
@@ -109,30 +87,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-03-21T06:09:21.611Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "index.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\index.aspx.cs",
-              "RelativeDocumentMoniker": "BTL_Web_DictionaryOnline\\index.aspx.cs",
-              "ToolTip": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\index.aspx.cs",
-              "RelativeToolTip": "BTL_Web_DictionaryOnline\\index.aspx.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T12:51:45.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainLayout.Master",
-              "DocumentMoniker": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\MainLayout.Master",
-              "RelativeDocumentMoniker": "BTL_Web_DictionaryOnline\\MainLayout.Master",
-              "ToolTip": "C:\\Users\\admin\\workspace\\LTW Project\\BTL_Web_DictionaryOnline\\BTL_Web_DictionaryOnline\\MainLayout.Master",
-              "RelativeToolTip": "BTL_Web_DictionaryOnline\\MainLayout.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-17T12:43:16.145Z"
             }
           ]
         },

@@ -87,6 +87,7 @@
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
     <Content Include="index.html" />
+    <Content Include="js\loginForm.js" />
     <Content Include="js\main.js" />
     <Content Include="login.aspx" />
     <Content Include="Web.config" />

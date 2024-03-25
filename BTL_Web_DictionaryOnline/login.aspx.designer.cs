@@ -51,6 +51,15 @@ namespace BTL_Web_DictionaryOnline
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl check;
 
         /// <summary>
+        /// name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText name;
+
+        /// <summary>
         /// user control.
         /// </summary>
         /// <remarks>
@@ -67,15 +76,6 @@ namespace BTL_Web_DictionaryOnline
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword pass;
-
-        /// <summary>
-        /// recheck control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword recheck;
 
         /// <summary>
         /// Label1 control.

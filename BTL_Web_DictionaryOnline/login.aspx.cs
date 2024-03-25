@@ -13,5 +13,15 @@ namespace BTL_Web_DictionaryOnline
         {
 
         }
+
+        protected void Login_onClick(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Signup_onClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

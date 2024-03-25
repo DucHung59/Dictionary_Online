@@ -3,10 +3,22 @@
     margin: 40px auto;
     border: 1px solid var(--main-color);
     border-radius: 40px;
+    position: relative;
+}
+
+h4 {
+    color: var(--main-color);
+}
+
+#Signup, #Login {
+    cursor: pointer;
+    color: var(--main-color);
+    text-decoration: 1px solid var(--main-color);
 }
 
 .login, .signup {
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: 20px;
     align-items: center;
@@ -15,15 +27,20 @@
 .login-group {
     padding-left: 10px;
     margin-bottom: 10px;
-    border-radius: 20px;
-    border: 1px solid gray;
+    border: none;
+    border-bottom: 1px solid gray;
     width: 200px;
-    height: 40px;
+    height: 30px;
+}
+
+input-group:focus-visible {
+    outline: 0;
 }
 
 .btn-group {
     background: var(--main-color);
     color: white;
+    border: 1px solid gray;
     transition: all ease-in-out 0.3s;
 }
 
@@ -39,9 +56,44 @@
     margin: 10px 0;
 }
 
-.container span:hover {
-    cursor: pointer;
-    color: var(--main-color);
-    text-decoration: 1px solid var(--main-color);
+
+.Message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: white;
+    border-radius: 40px;
+    height: 100%;
+    transition: 0.5s all ease;
+    z-index: 4;
 }
 
+.Message:before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 90%;
+    background: var(--main-color);
+    opacity: 0;
+}
+
+.message-login {
+    width: 49.9%;
+    transform: translateX(100%);
+}
+
+.message-signup {
+    width: 50%;
+    transform: translateX();
+}
+
+.message-login::before {
+    left: 0;
+    opacity: 0.8;
+}
+
+.message-signup::before {
+    left: 100%;
+    opacity: 0.8;
+}
