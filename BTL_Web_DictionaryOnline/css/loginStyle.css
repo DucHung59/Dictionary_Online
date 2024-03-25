@@ -1,7 +1,7 @@
 ﻿.container {
     display: flex;
     margin: 40px auto;
-    border: 1px solid var(--main-color);
+    border: 2px solid var(--main-color);
     border-radius: 40px;
     position: relative;
 }
@@ -13,6 +13,7 @@ h4 {
 #Signup, #Login {
     cursor: pointer;
     color: var(--main-color);
+    margin: 10px 0;
     text-decoration: 1px solid var(--main-color);
 }
 
@@ -33,14 +34,12 @@ h4 {
     height: 30px;
 }
 
-input-group:focus-visible {
-    outline: 0;
-}
 
 .btn-group {
     background: var(--main-color);
     color: white;
     border: 1px solid gray;
+    margin-top: 30px;
     transition: all ease-in-out 0.3s;
 }
 
@@ -53,7 +52,6 @@ input-group:focus-visible {
     width: 80%;
     height: 1px;
     background: var(--main-color);
-    margin: 10px 0;
 }
 
 
