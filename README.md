@@ -1,5 +1,8 @@
 # Dictionary_Online
-
+<div>
+  This is sources about my major assignment <br>
+  You can lookup word meaning via it
+</div>
 
 # Language & Technologi used:
 <p align="center">
