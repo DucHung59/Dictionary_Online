@@ -1,8 +1,13 @@
 # Dictionary_Online
 <div>
-  This is sources about my major assignment <br>
+  - Description
+  This is sources about my major assignment,
   You can lookup word meaning via it
 </div>
+<div>
+  - Team member: 3
+</div>
+  
 
 # Language & Technologi used:
 <p align="center">
