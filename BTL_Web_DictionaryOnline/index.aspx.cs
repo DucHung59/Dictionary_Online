@@ -16,11 +16,16 @@ namespace BTL_Web_DictionaryOnline
                 btnLogin.Visible = false;
                 username.InnerText = Session["username"].ToString();
                 btnLogout.Visible = true;
-            } else
-            {
-                btnLogin.Visible = true;
-                btnLogout.Visible = false;
             }
+        }
+
+        protected void btnLogout_onClick(object sender, EventArgs e)
+        {
+            Session["username"] = null;
+            username.InnerText = "";
+            btnLogin.Visible = true;
+            btnLogout.Visible = false;
+            Response.Redirect("login.aspx");
         }
     }
 }

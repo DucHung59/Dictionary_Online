@@ -6,13 +6,13 @@
 
 
 <asp:Content runat="server" ContentPlaceHolderID="login">
-    <div class="login">
+    <form class="login" action="" runat="server">
         <button class="btnLogin" ID="btnLogin" runat="server"><a href="login.aspx">Login</a></button>
         <div class="logout">
             <label name="username" id="username" runat="server"></label>
-            <input type="button" value="Logout" class="btnLogin" name="btnLogout" Visible="false" ID="btnLogout" runat="server"/>
+            <asp:Button text="Logout" class="btnLogin" name="btnLogout" Visible="false" ID="btnLogout" runat="server" OnClick="btnLogout_onClick" />
         </div>
-    </div>
+    </form>
 </asp:Content>
 
 
@@ -22,12 +22,12 @@
     </div>
 
     <div class="container">
-      <form class="searchForm" method="get" action="index.aspx" runat="server">
+      <div class="searchForm" method="get"  >
         <div class="group">
           <input type="text" class="input-group" placeholder="Search something here..." id="search" name="search" runat="server" />
           <button class="btnSearch" type="submit">Search</button>
         </div>
-      </form>
+      </div>
     </div>
 
     <div class="">
