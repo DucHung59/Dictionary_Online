@@ -4,11 +4,21 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Newtonsoft.Json;
+using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace BTL_Web_DictionaryOnline
 {
     public partial class login : System.Web.UI.Page
     {
+        public string filePath = "App_Data/userAccounts/db.json";
+        public class UserAccount
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -16,6 +26,27 @@ namespace BTL_Web_DictionaryOnline
 
         protected void Login_onClick(object sender, EventArgs e)
         {
+
+            string fileName = Server.MapPath(filePath);
+
+            string jsonContent = File.ReadAllText(fileName);
+            List<UserAccount> userAccounts = JsonConvert.DeserializeObject<List<UserAccount>>(jsonContent);
+
+
+            string tk = username.Value;
+            string mk = password.Value;
+
+
+            UserAccount user = userAccounts.FirstOrDefault(a => a.Username == tk && a.Password ==  mk);
+
+            if (user != null)
+            {
+                Session["username"] = user.Username;
+                Response.Redirect("index.aspx");
+            } else
+            {
+                check.InnerText = "Đăng nhập thất bại!";
+            }
 
         }
 

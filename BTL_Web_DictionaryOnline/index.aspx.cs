@@ -11,7 +11,16 @@ namespace BTL_Web_DictionaryOnline
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string wordSearch = Request.Form["search"];
+            if (Session["username"] != null)
+            {
+                btnLogin.Visible = false;
+                username.InnerText = Session["username"].ToString();
+                btnLogout.Visible = true;
+            } else
+            {
+                btnLogin.Visible = true;
+                btnLogout.Visible = false;
+            }
         }
     }
 }

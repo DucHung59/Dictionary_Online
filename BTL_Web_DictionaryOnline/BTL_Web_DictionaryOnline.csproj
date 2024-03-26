@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainLayout.Master" />
+    <Content Include="App_Data\userAccounts\db.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -130,7 +131,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
