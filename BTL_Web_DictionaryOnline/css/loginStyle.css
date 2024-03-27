@@ -38,6 +38,9 @@ label {
     height: 30px;
 }
 
+.input-group:focus {
+    outline: none;
+}
 
 .btn-group {
     background: var(--main-color);
