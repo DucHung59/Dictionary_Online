@@ -1,14 +1,17 @@
 [
-    {
-      "username": "hung",
-      "password": "1"
-    },
-    {
-      "username": "ha",
-      "password": "2"
-    },
-    {
-      "username": "khoi",
-      "password":  "3"
-    }
+  {
+     "name": "Duc Hung",
+    "username": "hung",
+    "password": "1"
+  },
+  {
+    "name": "Vu Ha",
+    "username": "ha",
+    "password": "2"
+  },
+  {
+    "name": "Tien Khoi",
+    "username": "khoi",
+    "password": "3"
+  }
 ]

@@ -31,5 +31,8 @@
     <footer>
 
     </footer>
+
+    <asp:ContentPlaceHolder ID="script" runat="server">
+    </asp:ContentPlaceHolder>
 </body>
 </html>

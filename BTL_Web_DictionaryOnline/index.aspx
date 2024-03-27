@@ -34,3 +34,7 @@
 
     </div>
 </asp:Content>
+
+<asp:Content ContentPlaceHolderID="script" runat="server">
+    <script src="js/search.js"></script>
+</asp:Content>

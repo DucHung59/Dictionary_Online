@@ -15,6 +15,7 @@ namespace BTL_Web_DictionaryOnline
         public string filePath = "App_Data/userAccounts/db.json";
         public class UserAccount
         {
+            public string Name {  get; set; }
             public string Username { get; set; }
             public string Password { get; set; }
         }
@@ -41,7 +42,7 @@ namespace BTL_Web_DictionaryOnline
 
             if (user != null)
             {
-                Session["username"] = user.Username;
+                Session["username"] = user.Name;
                 Response.Redirect("index.aspx");
             } else
             {

@@ -33,6 +33,9 @@
         </div>
     </form>
 
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="script" runat="server">
     <script src="js/loginForm.js"></script>
 </asp:Content>
 
