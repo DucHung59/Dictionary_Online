@@ -26,7 +26,7 @@
                 <input type="text" id="user" name="user" class="login-group input-group" runat="server" placeholder="Username..." />
                 <input type="password" id="pass" name="pass" class="login-group input-group" runat="server" placeholder="Password..." />
                 <label id="checkSignup" name="checkSignup" runat="server"></label>
-                <input type="submit" class="login-group btn-group" value="Sign up" />
+                <asp:Button class="login-group btn-group" text="Sign up" runat="server" onclick="Signup_onClick"/>
                 <div class="vertical-bar"></div>
                 <span id="Login">Have an account?</span>
             </div>

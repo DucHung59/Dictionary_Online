@@ -53,7 +53,30 @@ namespace BTL_Web_DictionaryOnline
 
         protected void Signup_onClick(object sender, EventArgs e)
         {
+            string fileName = Server.MapPath(filePath);
 
+            string jsonContent = File.ReadAllText(fileName);
+            List<UserAccount> userAccounts = JsonConvert.DeserializeObject<List<UserAccount>>(jsonContent);
+
+            UserAccount newUser = new UserAccount
+            {
+                Name = name.Value,
+                Username = user.Value,
+                Password = pass.Value,
+            };
+
+            UserAccount validate_User = userAccounts.FirstOrDefault(a => a.Username == newUser.Username);
+
+            if (validate_User != null)
+            {
+                checkSignup.InnerText = "Tên đăng nhập đã tồn tại";
+            } 
+            else
+            {
+                userAccounts.Add(newUser);
+
+                File.WriteAllText(fileName, JsonConvert.SerializeObject(userAccounts));
+            }
         }
     }
 }
