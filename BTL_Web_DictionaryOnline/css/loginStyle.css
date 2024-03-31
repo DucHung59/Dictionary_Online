@@ -16,9 +16,12 @@ h4 {
     margin: 10px 0;
     text-decoration: 1px solid var(--main-color);
 }
-label {
+.check {
+    display: flex;
     color: red;
     font-size: 10px;
+    text-align: center;
+    justify-content: center;
 }
 
 .login, .signup {

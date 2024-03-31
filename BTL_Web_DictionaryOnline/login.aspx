@@ -15,7 +15,7 @@
                 <h4>Log in</h4>
                 <input type="text" id="username" name="username" class="login-group input-group" runat="server" placeholder="Username..." />
                 <input type="password" id="password" name="password" class="login-group input-group" runat="server" placeholder="Password..." />
-                <label id="check" name="check" runat="server"></label>
+                <div id="check" class="check" name="check" runat="server"></div>
                 <asp:Button text="Login" class="login-group btn-group" onclick="Login_onClick" runat="server"/>
                 <div class="vertical-bar"></div>
                 <span id="Signup">Don't have an account?</span>
@@ -25,7 +25,6 @@
                 <input type="text" id="name" name="name" class="login-group input-group" runat="server" placeholder="Your name..." />
                 <input type="text" id="user" name="user" class="login-group input-group" runat="server" placeholder="Username..." />
                 <input type="password" id="pass" name="pass" class="login-group input-group" runat="server" placeholder="Password..." />
-                <label id="checkSignup" name="checkSignup" runat="server"></label>
                 <asp:Button class="login-group btn-group" text="Sign up" runat="server" onclick="Signup_onClick"/>
                 <div class="vertical-bar"></div>
                 <span id="Login">Have an account?</span>

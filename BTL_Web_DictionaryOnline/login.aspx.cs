@@ -69,7 +69,7 @@ namespace BTL_Web_DictionaryOnline
 
             if (validate_User != null)
             {
-                checkSignup.InnerText = "Tên đăng nhập đã tồn tại";
+                check.InnerHtml = "<div> Tên đăng nhập đã tồn tại <br> Nếu là bạn vui lòng đăng nhập </div>";
             } 
             else
             {
@@ -77,6 +77,11 @@ namespace BTL_Web_DictionaryOnline
 
                 File.WriteAllText(fileName, JsonConvert.SerializeObject(userAccounts));
             }
+
+            name.Value = "";
+            user.Value = "";
+            pass.Value = "";
+
         }
     }
 }

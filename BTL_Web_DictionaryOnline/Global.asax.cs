@@ -14,5 +14,9 @@ namespace BTL_Web_DictionaryOnline
             
         }
 
+        protected void Session_Start(object sender, EventArgs e)
+        {
+        }
+
     }
 }
