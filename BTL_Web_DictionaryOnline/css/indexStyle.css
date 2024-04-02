@@ -20,6 +20,7 @@
 
 .searchForm {
     width: 50%;
+    min-width: 300px
 }
 
 .group {
@@ -66,6 +67,7 @@
 /* --------------- display Search-----------------*/
 .displaySearch {
     margin: 50px 250px 0 250px;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
 }
@@ -146,3 +148,17 @@
             height: 100%;
             object-fit: cover;
         }
+
+/*--------Responsive--------------------*/
+@media (max-width: 900px) {
+    .displaySearch {
+        margin: 25px auto;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .displaySearch {
+        margin: 25px 10px 0 10px;
+    }
+}
