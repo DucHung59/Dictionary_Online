@@ -4,6 +4,15 @@
     cursor: default;
 }
 
+
+.lists-menu {
+    margin-left: 20px;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
 .lists-menu li {
     height: 100%;
 }
@@ -14,6 +23,45 @@
     color: white;
     padding: 8px;
 }
+
+.lists-menu--Feature {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 12rem;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.lists-menu .lists-menu--Feature .list-item--Feature {
+    text-align: center;
+    background: var(--main-color);
+    border-top: 1px solid white;
+    height: 30px;
+    border-right: none;
+    margin: 0;
+}
+
+.list-item--Feature a {
+    color: white;
+    display: block;
+    line-height: 30px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+}
+
+    .list-item--Feature a:hover {
+        opacity: 0.4;
+    }
+
+    .lists-menu > li:hover > .lists-menu--Feature {
+        visibility: visible;
+        opacity: 1;
+    }
 
 .list-item::after {
     content: '';

@@ -20,7 +20,9 @@ function search(data) {
         displaySearchWord_label.innerText = item.partOfSpeech;
 
         displaySearchWord.appendChild(displaySearchWord_label);
-    })
+    });
+
+
 
     //----------------- displaySearch_phonetics (phát âm)
     let displaySearchPhonetics = document.createElement('div');
@@ -63,12 +65,40 @@ function search(data) {
     displaySearchExampleHeader.appendChild(displaySearchExampleHeader_i);
     displaySearchExampleHeader.appendChild(displaySearchExampleHeader_label);
 
+    let displaySearchWord_content = document.createElement('div');
+    displaySearchWord_content.classList.add('displaySearch_example--content');
+    let htmls = "";
+
+    data[0].meanings.forEach((item, index) => {
+        /*console.log(item)*/
+        item.definitions.forEach((item1, index1) => {
+            /*console.log(item1);*/
+            if (item1.example != undefined) {
+                console.log(item1.example);
+                htmls += `<label> - ${item1.example}</label>`;
+            }
+        })
+        /*if (item.example != "undefined") {
+            let displaySearchExampleContent = document.createElement('div')
+            displaySearchExampleContent.classList.add('displaySearch_example--content');
+
+            let displaySearchWord_label = document.createElement('label');
+            displaySearchWord_label.innerText = `${index + 1}. ${item.example}`;
+            console.log(item.example);
+        }*/
+    });
+
+    displaySearchWord_content.innerHTML = htmls;
+
     displaySearchExample.appendChild(displaySearchExampleHeader);
+    displaySearchExample.appendChild(displaySearchWord_content);
 
     displaySearch.appendChild(displaySearchWord);
     displaySearch.appendChild(displaySearchPhonetics);
     displaySearch.appendChild(displaySearchDefinition);
     displaySearch.appendChild(displaySearchExample);
+
+
     //displaySearch.innerHTML = `
     //    <div class="displaySearch_word">
     //        <label>${data[0].word}</label>
@@ -100,6 +130,17 @@ function search(data) {
 
     //    ` 
 }
+
+/*const api1 = `https://api.dictionaryapi.dev/api/v2/entries/en/sun`
+const api2 =  `https://wordsapiv1.p.mashape.com/words/moon`
+
+fetch(api1)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+    }) 
+
+console.log(api1);*/
 
 // nút Search
 btnSearch.onclick = () => {

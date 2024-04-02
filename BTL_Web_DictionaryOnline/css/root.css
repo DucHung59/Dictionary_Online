@@ -15,18 +15,6 @@ button {
     background: none;
 }
 
-ul {
-    margin: 0;
-    display: flex;
-    height: 40px;
-    align-items: center;
-    list-style: none;
-}
-
-    ul li {
-        margin-left: 20px;
-    }
-
 a {
     color: black;
     text-decoration: none;
