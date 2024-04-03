@@ -7,7 +7,7 @@
 
 
 <asp:Content runat="server" ContentPlaceHolderID="login">
-    <form class="login" action="" runat="server">
+    <form class="login" runat="server">
         <button class="btnLogin" id="btnLogin" runat="server"><a href="login.aspx">Login</a></button>
         <div class="logout">
             <label name="username" id="username" runat="server"></label>

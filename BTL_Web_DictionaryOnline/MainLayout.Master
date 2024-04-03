@@ -16,14 +16,12 @@
         <div style="background: var(--main-color); height: 40px; display: flex; align-items: center; justify-content: space-between">
             <ul class="lists-menu">
                 <li><a href="index.aspx" class="list-item">Home</a></li>
-                <li><a href="" class="list-item">Feature</a>
+                <li><a href="#" class="list-item">Feature</a>
                     <ul class="lists-menu--Feature">
-                        <li class="list-item--Feature"><a href="">Account</a></li>
+                        <li class="list-item--Feature"><a href="Account.aspx">Account</a></li>
                         <li class="list-item--Feature"><a href="">Marked</a></li>
-                        <li class="list-item--Feature"><a href=""></a></li>
                     </ul>
                 </li>
-                <li><a href="" class="list-item">Contact</a></li>
             </ul>
 
             <asp:ContentPlaceHolder ID="login" runat="server">

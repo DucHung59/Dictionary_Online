@@ -42,7 +42,9 @@ namespace BTL_Web_DictionaryOnline
 
             if (user != null)
             {
-                Session["username"] = user.Name;
+                Session["name"] = user.Name;
+                Session["username"] = user.Username;
+                Session["password"] = user.Password;
                 Response.Redirect("index.aspx");
             } else
             {
@@ -57,26 +59,34 @@ namespace BTL_Web_DictionaryOnline
 
             string jsonContent = File.ReadAllText(fileName);
             List<UserAccount> userAccounts = JsonConvert.DeserializeObject<List<UserAccount>>(jsonContent);
-
-            UserAccount newUser = new UserAccount
+            
+            UserAccount newUser = new UserAccount();
+            
+            if (name.Value == "" || pass.Value == "" || user.Value == "")
             {
-                Name = name.Value,
-                Username = user.Value,
-                Password = pass.Value,
-            };
-
-            UserAccount validate_User = userAccounts.FirstOrDefault(a => a.Username == newUser.Username);
-
-            if (validate_User != null)
-            {
-                check.InnerHtml = "<div> Tên đăng nhập đã tồn tại <br> Nếu là bạn vui lòng đăng nhập </div>";
+                check.InnerHtml = "Vui lòng nhập giá trị";
             } 
             else
             {
-                userAccounts.Add(newUser);
+                newUser.Name = name.Value;
+                newUser.Username = username.Value;
+                newUser.Password = password.Value;
 
-                File.WriteAllText(fileName, JsonConvert.SerializeObject(userAccounts));
+                UserAccount validate_User = userAccounts.FirstOrDefault(a => a.Username == newUser.Username);
+
+                if (validate_User != null)
+                {
+                    check.InnerHtml = "<div> Tên đăng nhập đã tồn tại <br> Nếu là bạn vui lòng đăng nhập </div>";
+                } 
+                else
+                {
+                    userAccounts.Add(newUser);
+
+                    File.WriteAllText(fileName, JsonConvert.SerializeObject(userAccounts));
+                    check.InnerHtml = "Đăng ký thành công, vui lòng đăng nhập";
+                }
             }
+
 
             name.Value = "";
             user.Value = "";
