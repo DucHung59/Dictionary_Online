@@ -55,7 +55,7 @@ h4 {
 }
 
 .btn-group:hover {
-    background: #d9ecc7;
+    background: var(--sub-color);
     color: black;
 }
 

@@ -5,6 +5,8 @@
     align-items: center;
     width: max-content;
     border: 2px solid var(--main-color);
+    padding: 12px;
+    zoom: 1.25;
 }
 
 
@@ -16,3 +18,20 @@
     border-bottom: 1px solid var(--main-color);
     width: 200px;
 }
+
+.btn-group {
+    background: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    transition: 0.3s ease;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+    .btn-group:hover {
+        background: var(--sub-color);
+        color: black;
+    }

@@ -19,7 +19,8 @@
             <label>**********</label>
         </div>
         <form class="logout" runat="server">
-            <input type="button" value="Logout" runat="server" id="btnLogout" name="btnLogout" />    
+            <input type="button" value="Logout" runat="server" id="btnLogout" class="btn-group" name="btnLogout" />
+            <input type="button" value="Edit" runat="server" id="btnEdit" class="btn-group" name="btnEdit" /> 
         </form>
     </div>
 </asp:Content>
