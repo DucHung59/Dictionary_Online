@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Account.aspx.cs" Inherits="BTL_Web_DictionaryOnline.Account" MasterPageFile="~/MainLayout.Master"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Account.aspx.cs" Inherits="BTL_Web_DictionaryOnline.Account" MasterPageFile="~/MainLayout.Master" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="head">
     <link href="css/accountStyle.css" rel="stylesheet" />
@@ -18,11 +18,15 @@
             <label>Password: </label>
             <label>**********</label>
         </div>
-        <form class="logout" runat="server">
-            <input type="button" value="Logout" runat="server" id="btnLogout" class="btn-group" name="btnLogout" />
-            <input type="button" value="Edit" runat="server" id="btnEdit" class="btn-group" name="btnEdit" /> 
-        </form>
     </div>
+    <form class="editForm" runat="server">
+        <input type="button" value="Change Account" runat="server" id="btnLogout" class="btn-group" name="btnLogout" />
+        <input type="button" value="Edit" runat="server" id="btnEdit" class="btn-group" name="btnEdit" />
+
+        <div clas="editForm-input">
+
+        </div>
+    </form>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="script" runat="server">

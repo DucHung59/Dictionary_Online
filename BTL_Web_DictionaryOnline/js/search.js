@@ -35,8 +35,8 @@ function search(data) {
     displaySearchPhonetics_i.classList.add('fa-solid');
     displaySearchPhonetics_i.classList.add('fa-volume-high');
 
-    displaySearchPhonetics.appendChild(displaySearchPhonetics_label);
     displaySearchPhonetics.appendChild(displaySearchPhonetics_i);
+    displaySearchPhonetics.appendChild(displaySearchPhonetics_label);
 
     //----------------- displaySearch_definition (label định nghĩa)
     let displaySearchDefinition = document.createElement('div');
