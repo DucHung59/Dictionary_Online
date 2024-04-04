@@ -11,6 +11,8 @@
 }
 
 #login_username {
+    width: auto;
+    text-wrap: nowrap;
     height: 100%;
     font-weight: 500;
     text-transform: uppercase;

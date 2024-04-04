@@ -39,7 +39,7 @@ namespace BTL_Web_DictionaryOnline
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputButton btnLogout;
+        protected global::System.Web.UI.WebControls.Button btnLogout;
 
         /// <summary>
         /// btnEdit control.
@@ -48,6 +48,15 @@ namespace BTL_Web_DictionaryOnline
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputButton btnEdit;
+        protected global::System.Web.UI.WebControls.Button btnEdit;
+
+        /// <summary>
+        /// editForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl editForm;
     }
 }

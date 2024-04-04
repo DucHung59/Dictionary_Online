@@ -22,5 +22,16 @@ namespace BTL_Web_DictionaryOnline
                 username.InnerText = Session["username"].ToString();
             }
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session["username"] = null;
+            Response.Redirect("login.aspx");
+        }
+
+        protected void btnEdit_Click(object sender, EventArgs e)
+        {
+            editForm.Visible = true;
+        }
     }
 }

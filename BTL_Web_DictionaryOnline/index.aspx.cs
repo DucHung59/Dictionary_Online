@@ -14,14 +14,16 @@ namespace BTL_Web_DictionaryOnline
             if (Session["username"] != null)
             {
                 btnLogin.Visible = false;
-                username.InnerText = Session["username"].ToString();
+                username.InnerText = Session["name"].ToString();
                 btnLogout.Visible = true;
             }
         }
 
         protected void btnLogout_onClick(object sender, EventArgs e)
         {
+            Session["name"] = null;
             Session["username"] = null;
+            Session["password"] = null;
             username.InnerText = "";
             btnLogin.Visible = true;
             btnLogout.Visible = false;

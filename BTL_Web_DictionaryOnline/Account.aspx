@@ -20,11 +20,11 @@
         </div>
     </div>
     <form class="editForm" runat="server">
-        <input type="button" value="Change Account" runat="server" id="btnLogout" class="btn-group" name="btnLogout" />
-        <input type="button" value="Edit" runat="server" id="btnEdit" class="btn-group" name="btnEdit" />
+        <asp:Button Text="Change Account" class="btn-group" name="btnLogout" ID="btnLogout" runat="server" OnClick="btnLogout_Click" />
+        <asp:Button Text="Change Password" class="btn-group" name="btnLogout" ID="btnEdit" runat="server" OnClick="btnEdit_Click"/>
 
-        <div clas="editForm-input">
-
+        <div class="editForm-input" id="editForm" runat="server" visible="false">
+            <input />
         </div>
     </form>
 </asp:Content>
