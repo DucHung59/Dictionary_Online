@@ -24,7 +24,13 @@
         <asp:Button Text="Change Password" class="btn-group" name="btnLogout" ID="btnEdit" runat="server" OnClick="btnEdit_Click"/>
 
         <div class="editForm-input" id="editForm" runat="server" visible="false">
-            <input />
+            <input class="input-group" type="password" id="password" name="password" runat="server" placeholder="Type current password..."/>
+            <input class="input-group" type="password" id="checkAgain" name="checkAgain" runat="server" placeholder="Type new password..."/>
+
+            <div class="editForm-btn">
+                <asp:Button Text="Cancel" CssClass="btn-group" CommandName="btnCancel" ID="btnCancel" runat="server" OnClick="btnCancel_Click"/>
+                <asp:Button Text="Change" CssClass="btn-group" CommandName="btnSubmit" ID="btnSubmit" runat="server" OnClick="btnSubmit_Click"/>
+            </div>
         </div>
     </form>
 </asp:Content>

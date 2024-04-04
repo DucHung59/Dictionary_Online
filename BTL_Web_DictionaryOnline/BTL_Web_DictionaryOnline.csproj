@@ -82,6 +82,7 @@
   <ItemGroup>
     <Content Include="Account.aspx" />
     <Content Include="css\accountStyle.css" />
+    <Content Include="css\footer.css" />
     <Content Include="css\headerStyle.css" />
     <Content Include="css\loginStyle.css" />
     <Content Include="css\indexStyle.css" />

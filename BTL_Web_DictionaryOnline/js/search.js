@@ -1,6 +1,7 @@
 ﻿const btnSearch = document.getElementById('btnSearch');
 const inputSearch = document.getElementById('Content_search');
 const displaySearch = document.querySelector('.displaySearch');
+const searchForm_group = document.querySelector('.group');
 
 function search(data) {
     while (displaySearch.hasChildNodes()) {
@@ -31,12 +32,20 @@ function search(data) {
     let displaySearchPhonetics_label = document.createElement('label');
     displaySearchPhonetics_label.innerText = data[0].phonetic;
 
+    let displaySearchPhonetics_audio = document.createElement('audio'); //the audio
+    /*displaySearchPhonetics_audio.controls = true;*/
+    let displaySearchPhonetics_source = document.createElement('source'); //the source
+    displaySearchPhonetics_source.setAttribute('src', data[0].phonetics[0].audio);
+
     let displaySearchPhonetics_i = document.createElement('i');
     displaySearchPhonetics_i.classList.add('fa-solid');
     displaySearchPhonetics_i.classList.add('fa-volume-high');
 
-    displaySearchPhonetics.appendChild(displaySearchPhonetics_i);
+    displaySearchPhonetics_audio.appendChild(displaySearchPhonetics_source);
+
     displaySearchPhonetics.appendChild(displaySearchPhonetics_label);
+    displaySearchPhonetics.appendChild(displaySearchPhonetics_audio);
+    displaySearchPhonetics.appendChild(displaySearchPhonetics_i);
 
     //----------------- displaySearch_definition (label định nghĩa)
     let displaySearchDefinition = document.createElement('div');
@@ -60,7 +69,7 @@ function search(data) {
     displaySearchExampleHeader_i.classList.add('fa-comments');
 
     let displaySearchExampleHeader_label = document.createElement('label');
-    displaySearchExampleHeader_label.innerText = 'Ví dụ';
+    displaySearchExampleHeader_label.innerText = 'Example';
 
     displaySearchExampleHeader.appendChild(displaySearchExampleHeader_i);
     displaySearchExampleHeader.appendChild(displaySearchExampleHeader_label);
@@ -70,11 +79,8 @@ function search(data) {
     let htmls = "";
 
     data[0].meanings.forEach((item, index) => {
-        /*console.log(item)*/
-        item.definitions.forEach((item1, index1) => {
-            /*console.log(item1);*/
+        item.definitions.forEach((item1, index1) => {          
             if (item1.example != undefined) {
-                console.log(item1.example);
                 htmls += `<label> - ${item1.example}</label>`;
             }
         })
@@ -98,85 +104,94 @@ function search(data) {
     displaySearch.appendChild(displaySearchDefinition);
     displaySearch.appendChild(displaySearchExample);
 
-
-    //displaySearch.innerHTML = `
-    //    <div class="displaySearch_word">
-    //        <label>${data[0].word}</label>
-    //        <label class="displaySearch_word--category">VERB</label>
-    //        <label class="displaySearch_word--category">NOUN</label>
-    //    </div>
-
-    //    <div class="displaySearch_phonetics">
-    //        <label>/həˈloʊ/</label>
-    //        <i class="fa-solid fa-volume-high"></i>
-    //    </div>
-
-    //    <div class="displaySearch_definition">
-    //        <label>A greeting (salutation) said when meeting someone or acknowledging someone’s arrival or presence.</label>
-    //    </div>
-
-    //    <div class="displaySearch_example">
-    //        <div class="displaySearch_example--header">
-    //            <i class="fa-solid fa-comments"></i>
-    //            <label>Ví dụ</label>
-    //        </div>
-    //        <div class="displaySearch_example--content">
-    //            <label>1. Hello, everyone.</label>
-    //            <label>2. Hello? Is anyone there?</label>
-    //            <label>2. Hello? Is anyone there?</label>
-    //            <label>2. Hello? Is anyone there?</label>
-    //        </div>
-    //    </div>
-
-    //    ` 
 }
 
-/*const api1 = `https://api.dictionaryapi.dev/api/v2/entries/en/sun`
-const api2 =  `https://wordsapiv1.p.mashape.com/words/moon`
 
-fetch(api1)
-    .then(res => res.json())
-    .then(data => {
-        console.log(data);
-    }) 
-
-console.log(api1);*/
+function displaySearchWord() {
+    return new Promise((resolve) => {
+        const api = `https://api.dictionaryapi.dev/api/v2/entries/en/${inputSearch.value}`;
+        console.log(api);
+        fetch(api)
+            .then(res => {
+                if (!res.ok) {
+                    console.log('Đường dẫn API hợp lệ!')
+                }
+                else {
+                    return res.json();
+                }
+            })
+            .then(function (data) {
+                if (data) {
+                    search(data);
+                }
+                else {
+                    displaySearch.innerHTML = `
+                        <div class="displaySearch_error">
+                            <label>"Sorry pal, we couldn't find definitions for the word you were looking for."</label>
+                            <div>
+                                <img src="https://images.dolenglish.vn/rs:auto:::0/w:1440/q:70/aHR0cHM6Ly9ncWVmY3B5bG9ub2JqLnZjZG4uY2xvdWQvUFVCTElDL01FRElBL25vdF9mb3VuZF9iMTJiYjlhMDI3LnBuZw==" alt="Alternate Text" />
+                            </div>
+                        </div>`
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        resolve();
+    })
+}
 
 // nút Search
 btnSearch.onclick = () => {
-    const api = `https://api.dictionaryapi.dev/api/v2/entries/en/${inputSearch.value}`;
-    fetch(api)
-        .then(res => {
-            if (!res.ok) {
-                console.log('Đường dẫn API hợp lệ!')
-            }
-            else {
-                return res.json();
-            }
+    displaySearchWord()
+        .then(function() {
+            return new Promise((resolve) => {
+                setTimeout(resolve, 1000);
+            })          
         })
-        .then(function (data) {
-            if (data) {
-                search(data);
-                console.log(data[0].meanings[0].definitions[0].example);
-            }
-            else {
-                displaySearch.innerHTML = `
-                    <div class="displaySearch_error">
-                        <label>"Sorry pal, we couldn't find definitions for the word you were looking for."</label>
-                        <div>
-                            <img src="https://images.dolenglish.vn/rs:auto:::0/w:1440/q:70/aHR0cHM6Ly9ncWVmY3B5bG9ub2JqLnZjZG4uY2xvdWQvUFVCTElDL01FRElBL25vdF9mb3VuZF9iMTJiYjlhMDI3LnBuZw==" alt="Alternate Text" />
-                        </div>
-                    </div>`
-            }
+        .then(function() {
+            const mic = document.querySelector('.displaySearch_phonetics i');
+            // event icon Microphone
+            mic.addEventListener('click', () => {
+                const audio = document.querySelector('.displaySearch_phonetics audio');
+                audio.play();
+            })
         })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    console.log(api);
 }
 
-//Enter 
-inputSearch.addEventListener('focus', () => {
+//Enter trong ô input
+inputSearch.addEventListener('keydown', (event) => {
+    if (event.keyCode == 13) {
+        displaySearchWord()
+            .then(function () {
+                return new Promise((resolve) => {
+                    setTimeout(resolve, 1000);
+                })
+            })
+            .then(function () {
+                const mic = document.querySelector('.displaySearch_phonetics i');
+                // event icon Microphone
+                mic.addEventListener('click', () => {
+                    const audio = document.querySelector('.displaySearch_phonetics audio');
+                    audio.play();
+                })
+            })
+    }
+})
 
+// focus input Search
+
+//inputSearch.addEventListener('focus', () => {
+//    const searchHistory = document.querySelector('.searchForm_history');
+//    searchHistory.style.display = 'flex';
+//})
+
+searchForm_group.addEventListener('focusin', () => {
+    const searchHistory = document.querySelector('.searchForm_history');
+    searchHistory.style.display = 'flex';
+})
+searchForm_group.addEventListener('focusout', () => {
+    const searchHistory = document.querySelector('.searchForm_history');
+    searchHistory.style.display = 'none';
 })
 

@@ -1,0 +1,26 @@
+﻿footer {
+    border-top: 4px solid var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px 40px 200px;
+    background: #242938;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-item {
+    list-style: none;
+}
+
+.footer-item {
+    margin: 16px 0;
+}
+
+.footer-item__link {
+    color: white;
+}
+
+.footer-item__link:hover {
+    color: var(--main-color);
+}

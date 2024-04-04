@@ -69,8 +69,8 @@ namespace BTL_Web_DictionaryOnline
             else
             {
                 newUser.Name = name.Value;
-                newUser.Username = username.Value;
-                newUser.Password = password.Value;
+                newUser.Username = user.Value;
+                newUser.Password = pass.Value;
 
                 UserAccount validate_User = userAccounts.FirstOrDefault(a => a.Username == newUser.Username);
 

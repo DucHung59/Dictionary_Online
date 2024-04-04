@@ -109,7 +109,7 @@ h4 {
 
 
 @media (max-width: 786px) {
-    container {
+    .container {
         transform: scale(0.8);
     }
 }

@@ -68,9 +68,10 @@
 
 /* --------------- display Search-----------------*/
 .displaySearch {
-    margin: 50px 250px 0 250px;
+    margin: 50px 250px;
     min-width: 400px;
     display: flex;
+    height: 350px;
     flex-direction: column;
 }
 
@@ -161,6 +162,6 @@
 
 @media (max-width: 610px) {
     .displaySearch {
-        margin: 25px 10px 0 10px;
+        margin: 25px 10px;
     }
 }

@@ -32,6 +32,20 @@ namespace BTL_Web_DictionaryOnline
         protected void btnEdit_Click(object sender, EventArgs e)
         {
             editForm.Visible = true;
+            btnLogout.Visible = false;
+            btnEdit.Visible = false;
+        }
+
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            editForm.Visible = false;
+            btnLogout.Visible = true;
+            btnEdit.Visible = true;
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
