@@ -127,7 +127,7 @@ function displaySearchWord() {
                 else {
                     displaySearch.innerHTML = `
                         <div class="displaySearch_error">
-                            <label>"Sorry pal, we couldn't find definitions for the word you were looking for."</label>
+                            <label>"Sorry pal, we couldn't find definitions for '<span style="color: blue">${inputSearch.value}</span>' you were looking for."</label>
                             <div>
                                 <img src="https://images.dolenglish.vn/rs:auto:::0/w:1440/q:70/aHR0cHM6Ly9ncWVmY3B5bG9ub2JqLnZjZG4uY2xvdWQvUFVCTElDL01FRElBL25vdF9mb3VuZF9iMTJiYjlhMDI3LnBuZw==" alt="Alternate Text" />
                             </div>
