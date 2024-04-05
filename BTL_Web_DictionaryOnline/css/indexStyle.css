@@ -71,7 +71,8 @@
     margin: 50px 250px;
     min-width: 400px;
     display: flex;
-    height: 350px;
+    min-height: 200px;
+    height: auto;
     flex-direction: column;
 }
 

@@ -2,13 +2,12 @@
 
 <asp:Content runat="server" ContentPlaceHolderID="head">
     <link href="css/indexStyle.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </asp:Content>
 
 
 <asp:Content runat="server" ContentPlaceHolderID="login">
     <form class="login" runat="server">
-        <button class="btnLogin" id="btnLogin" runat="server"><a href="login.aspx">Login</a></button>
+        <button class="btnLogin" id="btnLogin" runat="server"><a href="login.html">Login</a></button>
         <div class="logout">
             <label name="username" id="username" runat="server"></label>
             <asp:Button Text="Logout" class="btnLogin" name="btnLogout" Visible="false" ID="btnLogout" runat="server" OnClick="btnLogout_onClick" />

@@ -9,13 +9,20 @@
     bottom: 0;
 }
 
-.footer-item {
-    list-style: none;
+.footer__heading {
+    cursor: default;
+}
+
+.footer-list {
+    cursor: default;
+    padding: 0;
 }
 
 .footer-item {
+    list-style: none;
     margin: 16px 0;
 }
+
 
 .footer-item__link {
     color: white;

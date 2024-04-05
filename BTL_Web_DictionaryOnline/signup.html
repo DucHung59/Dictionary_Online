@@ -1,18 +1,17 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainLayout.master.cs" Inherits="BTL_Web_DictionaryOnline.MainLayout" %>
-
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html>
-<head runat="server">
-    <title>Dictionary online</title>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/13755/13755309.png" />
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dictionary Online</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/13755/13755309.png" />
     <link rel="stylesheet" href="./css/headerStyle.css" />
     <link href="css/footer.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/root.css" />
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <link href="css/loginStyle.css" rel="stylesheet" />
 </head>
+
 <body>
     <nav class="header">
         <div style="background: var(--main-color); height: 40px; display: flex; align-items: center; justify-content: space-between">
@@ -20,14 +19,25 @@
                 <li><a href="index.aspx" class="list-item">Home</a></li>
                 <li><a href="Account.aspx" class="list-item">Account</a></li>
             </ul>
-
-            <asp:ContentPlaceHolder ID="login" runat="server">
-            </asp:ContentPlaceHolder>
         </div>
     </nav>
 
-    <asp:ContentPlaceHolder ID="Content" runat="server">
-    </asp:ContentPlaceHolder>
+    <div style="display: flex; margin-bottom: 90px;">
+        <div class="container">
+            <form action="signup.aspx" method="post" class="signup">
+                <h4>Sign up</h4>
+                <input type="text" id="name" name="name" class="login-group input-group" placeholder="Your name..." />
+                <input type="text" id="user" name="user" class="login-group input-group" placeholder="Username..." />
+                <input type="password" id="pass" name="pass" class="login-group input-group" placeholder="Password..." />
+                <button type="submit" class="login-group btn-group" id="btnSignup">Sign Up</button>
+                <div class="vertical-bar"></div>
+                <span id="Login"><a href="login.html">Have an account?</a></span>
+            </form>
+                <div class="Message message-signup">
+                    <h4 id="Message-Header">Sign up for free!</h4>
+                </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer_box">
@@ -56,7 +66,8 @@
                 <li class="footer-item">
                     <a href="" class="footer-item__link">
                         <i class="footer-icon fa-brands fa-instagram"></i>
-                        Instagram</a>
+                        Instagram
+                    </a>
                 </li>
                 <li class="footer-item">
                     <a href="" class="footer-item__link">
@@ -81,8 +92,6 @@
             </ul>
         </div>
     </footer>
-
-    <asp:ContentPlaceHolder ID="script" runat="server">
-    </asp:ContentPlaceHolder>
+    <script src="js/loginForm.js"></script>
 </body>
 </html>

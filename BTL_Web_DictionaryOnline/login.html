@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dictionary Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/13755/13755309.png" />
+    <link rel="stylesheet" href="./css/headerStyle.css" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/root.css" />
+    <link href="css/loginStyle.css" rel="stylesheet" />
+</head>
+
+<body>
+        <nav class="header">
+            <div style="background: var(--main-color); height: 40px; display: flex; align-items: center; justify-content: space-between">
+                <ul class="lists-menu">
+                    <li><a href="index.aspx" class="list-item">Home</a></li>
+                    <li><a href="Account.aspx" class="list-item">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div style="display: flex; margin-bottom: 90px;">
+            <div class="container">
+                <div class="Message message-login">
+                    <h4 id="Message-Header">Welcome back!</h4>
+                </div>
+                <form action="login.aspx" method="post" class="login">
+                    <h4>Log in</h4>
+                    <input type="text" id="username" name="username" class="login-group input-group" placeholder="Username..." />
+                    <input type="password" id="password" name="password" class="login-group input-group" placeholder="Password..." />
+                    <div id="check" class="check" name="check"></div>
+                    <button type="submit" class="login-group btn-group" id="btnLogin">Log In</button>
+                    <div class="vertical-bar"></div>
+                    <span id="Signup"><a href="signup.html">Don't have an account?</a></span>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_box">
+                <h3 class="footer__heading">Dictionary Online</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <p>Một sản phẩm của Dictionary Online</p>
+                    </li>
+                    <li class="footer-item">
+                        <p>Trụ sở: 96 Định Công, Hoàng Mai, HN</p>
+                    </li>
+                    <li class="footer-item">
+                        <p>Hotline: 0249.999.999</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_box">
+                <h3 class="footer__heading">Theo dõi chúng tôi</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="https://www.youtube.com/" class="footer-item__link">
+                            <i class="footer-icon fa-brands fa-facebook"></i>
+                            Facebock
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">
+                            <i class="footer-icon fa-brands fa-instagram"></i>
+                            Instagram</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">
+                            <i class="footer-icon fa-brands fa-linkedin-in"></i>
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_box">
+                <h3 class="footer__heading">Dictionary ECOSYSTEM</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link"> Dictionary Grammar </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link"> Dictionary Tự học </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link"> Kiến thức IELTS tổng hợp </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+</body>
+</html>

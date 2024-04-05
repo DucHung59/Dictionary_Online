@@ -14,7 +14,7 @@ namespace BTL_Web_DictionaryOnline
         {
             if (Session["username"] == null)
             {
-                Response.Redirect("login.aspx");
+                Response.Redirect("login.html");
             } 
             else
             {
@@ -26,7 +26,7 @@ namespace BTL_Web_DictionaryOnline
         protected void btnLogout_Click(object sender, EventArgs e)
         {
             Session["username"] = null;
-            Response.Redirect("login.aspx");
+            Response.Redirect("login.html");
         }
 
         protected void btnEdit_Click(object sender, EventArgs e)

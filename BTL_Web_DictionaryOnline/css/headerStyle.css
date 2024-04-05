@@ -60,10 +60,6 @@
     width: fit-content;
 }
 
-#username {
-    margin-right: 10px;
-}
-
 .logout {
     display: flex;
     align-items: center;

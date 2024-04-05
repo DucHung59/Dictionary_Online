@@ -68,42 +68,35 @@ h4 {
 
 .Message {
     display: flex;
+    margin: 0 25px;
+    padding: 0 25px;
     justify-content: center;
     align-items: center;
-    position: absolute;
     background: white;
     border-radius: 40px;
     height: 100%;
     transition: 0.5s all ease;
     z-index: 4;
+    position: relative;
 }
 
-.Message:before {
-    position: absolute;
+.Message::before {
     content: "";
-    width: 1px;
-    height: 90%;
+    width: 2px;
+    display: block;
     background: var(--main-color);
-    opacity: 0;
-}
-
-.message-login {
-    width: 49.9%;
-    transform: translateX(100%);
-}
-
-.message-signup {
-    width: 50%;
-    transform: translateX(0);
+    height: 90%;
+    right: 0;
+    position: absolute;
 }
 
 .message-login::before {
-    left: 0;
+    left: 100%;
     opacity: 0.8;
 }
 
 .message-signup::before {
-    left: 100%;
+    left: 0;
     opacity: 0.8;
 }
 

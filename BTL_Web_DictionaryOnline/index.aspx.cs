@@ -27,7 +27,7 @@ namespace BTL_Web_DictionaryOnline
             username.InnerText = "";
             btnLogin.Visible = true;
             btnLogout.Visible = false;
-            Response.Redirect("login.aspx");
+            Response.Redirect("login.html");
         }
     }
 }
