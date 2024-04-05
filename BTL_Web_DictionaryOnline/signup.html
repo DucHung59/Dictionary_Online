@@ -24,7 +24,7 @@
 
     <div style="display: flex; margin-bottom: 90px;">
         <div class="container">
-            <form action="signup.aspx" method="post" class="signup">
+            <form action="signup.aspx" method="post" class="signup" onsubmit="return checkSignup()">
                 <h4>Sign up</h4>
                 <input type="text" id="name" name="name" class="login-group input-group" placeholder="Your name..." />
                 <input type="text" id="user" name="user" class="login-group input-group" placeholder="Username..." />
