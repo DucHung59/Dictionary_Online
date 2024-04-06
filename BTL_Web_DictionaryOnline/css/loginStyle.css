@@ -21,7 +21,7 @@ h4 {
 .check {
     display: flex;
     color: red;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     justify-content: center;
 }
@@ -36,7 +36,7 @@ h4 {
 
 .login-group {
     padding-left: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     border: none;
     border-bottom: 1px solid gray;
     width: 200px;

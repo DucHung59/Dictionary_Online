@@ -31,7 +31,8 @@ namespace BTL_Web_DictionaryOnline
                 List<UserAccount> userAccounts = JsonConvert.DeserializeObject<List<UserAccount>>(jsonContent);
 
 
-                string htmls = "<table border='1' style='margin: 0 auto;border-collapse: collapse; width: 60%; margin-bottom: 50px; text-align: center'>";
+                string htmls = "<h3 style='margin: 0 auto; color: var(--main-color);'>List Accounts</h3>" +
+                    "<table border='1' style='margin: 0 auto;border-collapse: collapse; width: 60%; margin-bottom: 50px; text-align: center'>";
 
                 htmls += "<tr> <td>Name</td> <td>Username </td> <td>Pass</td>";
 
@@ -70,10 +71,31 @@ namespace BTL_Web_DictionaryOnline
             editForm.Visible = false;
             btnLogout.Visible = true;
             btnEdit.Visible = true;
+            Msg.InnerText = "";
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            string fileName = Server.MapPath(filePath);
+
+            string jsonContent = File.ReadAllText(fileName);
+            List<UserAccount> userAccounts = JsonConvert.DeserializeObject<List<UserAccount>>(jsonContent);
+
+
+            foreach(UserAccount userAccount in userAccounts)
+            {
+                if(userAccount.Username == Session["username"].ToString() && userAccount.Password == password.Value)
+                {
+                    userAccount.Password = newPass.Value;
+                    Msg.InnerText = "Đổi mật khẩu thành công";
+                } 
+                else
+                {
+                    Msg.InnerText = "Mật khẩu hiện tại không đúng";
+                }
+            }
+
+            File.WriteAllText(fileName, JsonConvert.SerializeObject(userAccounts));
 
         }
 

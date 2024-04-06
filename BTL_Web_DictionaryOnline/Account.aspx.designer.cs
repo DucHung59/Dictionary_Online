@@ -60,6 +60,15 @@ namespace BTL_Web_DictionaryOnline
         protected global::System.Web.UI.WebControls.Button btnDelete;
 
         /// <summary>
+        /// Msg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Msg;
+
+        /// <summary>
         /// editForm control.
         /// </summary>
         /// <remarks>
@@ -78,13 +87,13 @@ namespace BTL_Web_DictionaryOnline
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword password;
 
         /// <summary>
-        /// checkAgain control.
+        /// newPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword checkAgain;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword newPass;
 
         /// <summary>
         /// btnCancel control.
