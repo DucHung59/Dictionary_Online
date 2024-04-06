@@ -13,12 +13,6 @@ namespace BTL_Web_DictionaryOnline
     public partial class login : System.Web.UI.Page
     {
         public string filePath = "App_Data/userAccounts/db.json";
-        public class UserAccount
-        {
-            public string Name { get; set; }
-            public string Username { get; set; }
-            public string Password { get; set; }
-        }
 
         protected void Page_Load(object sender, EventArgs e)
         {

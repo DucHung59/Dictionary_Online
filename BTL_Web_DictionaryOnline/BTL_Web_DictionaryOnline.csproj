@@ -138,6 +138,7 @@
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserAccount.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainLayout.Master" />

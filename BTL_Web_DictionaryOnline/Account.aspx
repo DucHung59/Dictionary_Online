@@ -21,7 +21,8 @@
     </div>
     <form class="editForm" runat="server">
         <asp:Button Text="Change Account" class="btn-group" name="btnLogout" ID="btnLogout" runat="server" OnClick="btnLogout_Click" />
-        <asp:Button Text="Change Password" class="btn-group" name="btnLogout" ID="btnEdit" runat="server" OnClick="btnEdit_Click"/>
+        <asp:Button Text="Change Password" class="btn-group" name="btnChange" ID="btnEdit" runat="server" OnClick="btnEdit_Click"/>
+        <asp:Button Text="Delete User" class="btn-group" name="btnDelete" Visible="false" ID="btnDelete" runat="server" onClick="btnDelete_Click"/>
 
         <div class="editForm-input" id="editForm" runat="server" visible="false">
             <input class="input-group" type="password" id="password" name="password" runat="server" placeholder="Type current password..."/>
@@ -33,6 +34,9 @@
             </div>
         </div>
     </form>
+    <div id="accounts" runat="server" visible="false">
+
+    </div>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="script" runat="server">
