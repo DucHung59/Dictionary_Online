@@ -1,12 +1,16 @@
 ﻿footer {
     border-top: 4px solid var(--main-color);
     display: flex;
-    justify-content: space-between;
-    padding: 0 200px 40px 200px;
+    padding: 20px 0;
+    justify-content: space-evenly;
     background: #242938;
     color: white;
     position: relative;
     bottom: 0;
+}
+
+.footer_box {
+    padding: 20px;
 }
 
 .footer__heading {
