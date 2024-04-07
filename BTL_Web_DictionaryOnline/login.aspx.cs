@@ -35,10 +35,11 @@ namespace BTL_Web_DictionaryOnline
                 Session["password"] = user.Password;
                 Response.Redirect("index.aspx");
             }
-            else
-            {
-                Response.Redirect("login.html");
-            }
+        }
+
+        protected void btnOK_Click(object sender, EventArgs e)
+        { 
+            Response.Redirect("login.html");
         }
     }
 }

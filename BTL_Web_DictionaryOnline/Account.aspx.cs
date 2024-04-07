@@ -39,7 +39,7 @@ namespace BTL_Web_DictionaryOnline
 
                 foreach (UserAccount userAccount in userAccounts)
                 {
-                    htmls += "<tr> <td>" + userAccount.Name + "</td> <td>"  + userAccount.Username + "</td>" + "<td>*********</td>";
+                    htmls += "<tr> <td>" + userAccount.Name + "</td> <td>"  + userAccount.Username + "</td> <td>" + userAccount.Password +"</td>";
                 }
 
                 htmls += "</table>";
@@ -81,18 +81,22 @@ namespace BTL_Web_DictionaryOnline
             string jsonContent = File.ReadAllText(fileName);
             List<UserAccount> userAccounts = JsonConvert.DeserializeObject<List<UserAccount>>(jsonContent);
 
-
+            int i = 0;
             foreach(UserAccount userAccount in userAccounts)
             {
                 if(userAccount.Username == Session["username"].ToString() && userAccount.Password == password.Value)
                 {
                     userAccount.Password = newPass.Value;
-                    Msg.InnerText = "Đổi mật khẩu thành công";
-                } 
-                else
-                {
-                    Msg.InnerText = "Mật khẩu hiện tại không đúng";
+                    i = 1;
                 }
+            }
+
+            if(i == 0)
+            {
+                Msg.InnerText = "Mật khẩu hiện tại không đúng!";
+            } else
+            {
+                Msg.InnerText = "Đổi mật khẩu thành công";
             }
 
             File.WriteAllText(fileName, JsonConvert.SerializeObject(userAccounts));

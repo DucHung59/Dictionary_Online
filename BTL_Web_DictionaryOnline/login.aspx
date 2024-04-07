@@ -1,15 +1,31 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="BTL_Web_DictionaryOnline.login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="BTL_Web_DictionaryOnline.login"MasterPageFile="~/MainLayout.Master" %>
 
-<!DOCTYPE html>
+<asp:Content runat="server" ContentPlaceHolderID="head">
+    <style type="text/css">
+        .btnOK {
+            background: var(--main-color);
+            color: white;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            width: 150px;
+            height: 30px;
+            transition: 0.3s ease;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
+            .btnOK:hover {
+                background: var(--sub-color);
+                color: black;
+            }
+    </style>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="Content" runat="server">
+    <form runat="server" style="display: flex; flex-direction: column; width: max-content; align-items: center; margin: 20px auto; margin-bottom: 400px">
+        <h3 style="color: var(--main-color)">Tên đăng nhập hoặc mật khẩu không đúng!</h3>
+        <asp:Button Text="OK!" runat="server" ID="btnOK" OnClick="btnOK_Click" CssClass="btnOK" />
     </form>
-</body>
-</html>
+</asp:Content>
+
