@@ -20,31 +20,7 @@ namespace BTL_Web_DictionaryOnline
             }
             else if (Session["username"].ToString() == "admin")
             {
-                name.InnerText = Session["name"].ToString();
-                username.InnerText = Session["username"].ToString();
-                btnDelete.Visible = true;
-                accounts.Visible = true;
-
-                string fileName = Server.MapPath(filePath);
-
-                string jsonContent = File.ReadAllText(fileName);
-                List<UserAccount> userAccounts = JsonConvert.DeserializeObject<List<UserAccount>>(jsonContent);
-
-
-                string htmls = "<h3 style='margin: 0 auto; color: var(--main-color);'>List Accounts</h3>" +
-                    "<table border='1' style='margin: 0 auto;border-collapse: collapse; width: 60%; margin-bottom: 50px; text-align: center'>";
-
-                htmls += "<tr> <td>Name</td> <td>Username </td> <td>Pass</td>";
-
-
-                foreach (UserAccount userAccount in userAccounts)
-                {
-                    htmls += "<tr> <td>" + userAccount.Name + "</td> <td>"  + userAccount.Username + "</td> <td>" + userAccount.Password +"</td>";
-                }
-
-                htmls += "</table>";
-
-                accounts.InnerHtml = htmls;
+                showAccountLists();
             }
             else
             {
@@ -53,6 +29,35 @@ namespace BTL_Web_DictionaryOnline
             }
         }
 
+        private void showAccountLists ()
+        {
+            name.InnerText = Session["name"].ToString();
+            username.InnerText = Session["username"].ToString();
+            btnDelete.Visible = true;
+            accounts.Visible = true;
+
+            string fileName = Server.MapPath(filePath);
+
+            string jsonContent = File.ReadAllText(fileName);
+            List<UserAccount> userAccounts = JsonConvert.DeserializeObject<List<UserAccount>>(jsonContent);
+
+
+            string htmls = "<h3 style='margin: 0 auto; color: var(--main-color);'>List Accounts</h3>" +
+                "<table border='1' style='margin: 0 auto;border-collapse: collapse; width: 60%; margin-bottom: 50px; text-align: center'>" + 
+                "<tr> <td>Name</td> <td>Username </td> <td>Pass</td>";
+
+            var sortAccouts = userAccounts.OrderByDescending(u => u.Username).ToList();
+
+
+            foreach (UserAccount userAccount in userAccounts)
+            {
+                htmls += "<tr> <td>" + userAccount.Name + "</td> <td>" + userAccount.Username + "</td> <td>" + userAccount.Password + "</td>";
+            }
+
+            htmls += "</table>";
+
+            accounts.InnerHtml = htmls;
+        }
         protected void btnLogout_Click(object sender, EventArgs e)
         {
             Session["username"] = null;
