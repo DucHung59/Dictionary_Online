@@ -100,12 +100,49 @@ namespace BTL_Web_DictionaryOnline
             }
 
             File.WriteAllText(fileName, JsonConvert.SerializeObject(userAccounts));
+            DelUser.Value = "";
 
         }
 
         protected void btnDelete_Click(object sender, EventArgs e)
         {
+            btnLogout.Visible = false;
+            btnEdit.Visible = false;
+            btnDelete.Visible = false;
+            delForm.Visible = true;
+        }
 
+        protected void btnDel_Click(object sender, EventArgs e)
+        {
+            string fileName = Server.MapPath(filePath);
+
+            string jsonContent = File.ReadAllText(fileName);
+            List<UserAccount> userAccounts = JsonConvert.DeserializeObject<List<UserAccount>>(jsonContent);
+
+            int i = 0;
+            var userToRemove = userAccounts.FirstOrDefault(u => u.Username == DelUser.Value);
+
+            if (userToRemove == null)
+            {
+                Msg.InnerText = "Không có người dùng tương ứng!";
+            }
+            else
+            {
+                Msg.InnerText = "Xóa người dùng thành công";
+                userAccounts.Remove(userToRemove);
+            }
+            btnDelete.Visible = false;
+            File.WriteAllText(fileName, JsonConvert.SerializeObject(userAccounts));
+        }
+
+        protected void btnHuy_Click(object sender, EventArgs e)
+        {
+            delForm.Visible = false;
+            btnDelete.Visible = true;
+            btnLogout.Visible = true;
+            btnEdit.Visible = true;
+            Msg.InnerText = "";
+            DelUser.Value = "";
         }
     }
 }

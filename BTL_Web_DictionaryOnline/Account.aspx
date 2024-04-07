@@ -21,21 +21,30 @@
     </div>
     <form class="editForm" runat="server">
         <asp:Button Text="Change Account" class="btn-group" name="btnLogout" ID="btnLogout" runat="server" OnClick="btnLogout_Click" />
-        <asp:Button Text="Change Password" class="btn-group" name="btnChange" ID="btnEdit" runat="server" OnClick="btnEdit_Click"/>
-        <asp:Button Text="Delete User" class="btn-group" name="btnDelete" Visible="false" ID="btnDelete" runat="server" onClick="btnDelete_Click"/>
+        <asp:Button Text="Change Password" class="btn-group" name="btnChange" ID="btnEdit" runat="server" OnClick="btnEdit_Click" />
+        <asp:Button Text="Delete User" class="btn-group" name="btnDelete" Visible="false" ID="btnDelete" runat="server" OnClick="btnDelete_Click" />
         <span id="Msg" runat="server"></span>
 
         <div class="editForm-input" id="editForm" runat="server" visible="false">
-            <input class="input-group" type="password" id="password" name="password" runat="server" placeholder="Type current password..."/>
-            <input class="input-group" type="password" id="newPass" name="newPass" runat="server" placeholder="Type new password..."/>
+            <input class="input-group" type="password" id="password" name="password" runat="server" placeholder="Type current password..." />
+            <input class="input-group" type="password" id="newPass" name="newPass" runat="server" placeholder="Type new password..." />
 
             <div class="editForm-btn">
-                <asp:Button Text="Cancel" CssClass="btn-group" CommandName="btnCancel" ID="btnCancel" runat="server" OnClick="btnCancel_Click"/>
-                <asp:Button Text="Change" CssClass="btn-group" CommandName="btnSubmit" ID="btnSubmit" runat="server" OnClick="btnSubmit_Click"/>
+                <asp:Button Text="Cancel" CssClass="btn-group" CommandName="btnCancel" ID="btnCancel" runat="server" OnClick="btnCancel_Click" />
+                <asp:Button Text="Change" CssClass="btn-group" CommandName="btnSubmit" ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" />
+            </div>
+        </div>
+
+        <div class="edit-input" id="delForm" runat="server" visible="false">
+            <input class="input-group" type="text" id="DelUser" name="DelUser" runat="server" placeholder="Type username..." />
+            
+            <div class="editForm-btn">
+                <asp:Button Text="Cancel" CssClass="btn-group" CommandName="btnCancel" ID="btnHuy" runat="server" OnClick="btnHuy_Click" />
+                <asp:Button Text="Delete" CssClass="btn-group" CommandName="btnDelete" ID="btnDel" runat="server" OnClick="btnDel_Click" />
             </div>
         </div>
     </form>
-    <div id="accounts" runat="server" visible="false" style="display: flex; flex-direction:column; ">
+    <div id="accounts" runat="server" visible="false" style="display: flex; flex-direction: column;">
     </div>
 </asp:Content>
 
