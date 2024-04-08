@@ -124,7 +124,6 @@ namespace BTL_Web_DictionaryOnline
             string jsonContent = File.ReadAllText(fileName);
             List<UserAccount> userAccounts = JsonConvert.DeserializeObject<List<UserAccount>>(jsonContent);
 
-            int i = 0;
             var userToRemove = userAccounts.FirstOrDefault(u => u.Username == DelUser.Value);
 
             if (userToRemove == null)
@@ -138,6 +137,7 @@ namespace BTL_Web_DictionaryOnline
             }
             btnDelete.Visible = false;
             File.WriteAllText(fileName, JsonConvert.SerializeObject(userAccounts));
+            DelUser.Value = "";
         }
 
         protected void btnHuy_Click(object sender, EventArgs e)
