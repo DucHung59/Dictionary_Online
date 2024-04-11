@@ -45,6 +45,8 @@ h4 {
 
 .input-group:focus {
     outline: none;
+    background: red;
+    color: white;
 }
 
 .btn-group {

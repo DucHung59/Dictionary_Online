@@ -7,7 +7,6 @@ function checkLength(input, err, leng) {
     }
 }
 
-
 var checkSignup = () => {
     let name = document.getElementById('name').value.trim();
     let user = document.getElementById('user').value.trim();
@@ -18,7 +17,7 @@ var checkSignup = () => {
     let checkPass = document.getElementById('checkPass');
 
     if (name == "") {
-        checkYourName.innerText = 'không được để trống!';
+        err.push( 'không được để trống!');
     } else {
         checkLength(name, checkYourName, 15);
     }
@@ -38,6 +37,49 @@ var checkSignup = () => {
     }
     return false;
 };
+
+
+/*var checkSignup = () => {
+
+    let name = document.getElementById('name').value.trim();
+    let user = document.getElementById('user').value.trim();
+    let pass = document.getElementById('pass').value.trim();
+
+    let checkYourName = document.getElementById('checkYourName');
+    let checkUserName = document.getElementById('checkUserName');
+    let checkPass = document.getElementById('checkPass');
+
+    let err = [];
+
+    if (name == "") {
+        err.push('không được để trống!');
+    } else {
+        checkLength(name, checkYourName, 15);
+    }
+    if (user == "") {
+        err.push('không được để trống!');
+    } else {
+        checkLength(user, checkUserName, 8);
+    }
+    if (pass == "") {
+        err.push('không được để trống!');
+    } else {
+        checkLength(pass, checkPass, 8);
+    }
+    if (err.length > 0) {
+        var errSum = document.getElementById('errorSummary');
+        var errList = document.getElementById('errList');
+        errList.innerHTML = "";
+        err.forEach((err) => {
+            var li = document.createElement('li');
+            li.textContent = err;
+            errList.appendChild(li);
+        })
+        errSum.style.display = 'block';
+        return false
+    }
+    return true;
+}*/
 
 var checkLogin = () => {
     let user = document.getElementById('username').value.trim();

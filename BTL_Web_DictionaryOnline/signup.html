@@ -22,7 +22,7 @@
         </div>
     </nav>
 
-    <div style="display: flex; margin-bottom: 90px;">
+    <div style="display: flex; margin-bottom: 90px">
         <div class="container">
             <form action="signup.aspx" method="post" class="signup" onsubmit="return checkSignup()">
                 <h4>Sign up</h4>
@@ -32,7 +32,11 @@
                 <div id="checkUserName" class="check" name="checkUserName"></div>
                 <input type="password" id="pass" name="pass" class="login-group input-group" placeholder="Password..." />
                 <div id="checkPass" class="check" name="checkPass"></div>
-                <button type="submit" class="login-group btn-group" id="btnSignup">Sign Up</button>
+                <button type="submit" class="login-group btn-group" id="btnSignup" >Sign Up</button>
+                <details id="errorSummary" style="color:red; font-size: 12px; display:none">
+                    <summary>Cảnh báo: </summary>
+                    <ul id="errList"></ul>
+                </details>
                 <div class="vertical-bar"></div>
                 <span id="Login"><a href="login.html">Have an account?</a></span>
             </form>
@@ -87,10 +91,10 @@
                     <a href="" class="footer-item__link"> Dictionary Grammar </a>
                 </li>
                 <li class="footer-item">
-                    <a href="" class="footer-item__link"> Dictionary Tự học </a>
+                    <a href="https://dictionary.cambridge.org/" class="footer-item__link"> Dictionary Tự học </a>
                 </li>
                 <li class="footer-item">
-                    <a href="" class="footer-item__link"> Kiến thức IELTS tổng hợp </a>
+                    <a href="https://www.toeicmoingay.com/" class="footer-item__link"> Kiến thức TOEIC tổng hợp </a>
                 </li>
             </ul>
         </div>
